@@ -33,7 +33,9 @@
 
 (defsystem cl-xsd
   :description "Parses xsd into lisp xsd classes"
-  :depends-on (#:xmlisp #:closer-mop #:cl-package-locks)
+  :depends-on (#:xmlisp
+               #:closer-mop
+               #:cl-package-locks)
   :components ((:file "package")
                (:file "classes" :depends-on ("package"))))
 
